@@ -29,7 +29,7 @@ jobs:
 
     - name: Check formatting with black
       run: |
-        black --check .
+        python -m black --check src/ tests/
 
     - name: Run tests with coverage
       run: |
